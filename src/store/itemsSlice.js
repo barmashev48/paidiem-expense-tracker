@@ -40,7 +40,7 @@ const itemsSlice = createSlice({
       state.items = newItems;
     },
     changePaidStatus(state, action) {
-      const newItems = state.items.map((el) => {
+      state.items.forEach((el) => {
         if (el.id === action.payload) {
           el.paid = !el.paid;
         }
