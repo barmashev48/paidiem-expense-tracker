@@ -4,7 +4,9 @@ import Payments from "./components/Payments";
 function App() {
   return (
     <div className="app">
-      <header className="App-header"></header>
+      <header className="App-header">
+        <div className="logo">paidiem</div>
+      </header>
       <Form />
       <Payments />
     </div>

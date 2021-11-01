@@ -74,6 +74,7 @@ const Form = () => {
 
   return (
     <form onSubmit={submitHandler}>
+      <h1>Your Company's Payroll</h1>
       <div className="control-group">
         <div className={nameInputClasses}>
           <label htmlFor="name">To:</label>
@@ -103,7 +104,6 @@ const Form = () => {
         </div>
         <div className={amountInputClasses}>
           <label htmlFor="amount">Amount:</label>
-
           <input
             type="text"
             id="amount"
@@ -115,9 +115,9 @@ const Form = () => {
             <p className="error-text">Amount field has an error</p>
           )}
         </div>
-        <div>
-          <button disabled={!formIsValid}>Submit</button>
-        </div>
+      </div>
+      <div className="form-actions">
+        <button disabled={!formIsValid}>Submit</button>
       </div>
     </form>
   );

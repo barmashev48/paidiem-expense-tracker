@@ -18,8 +18,8 @@ const initialState = {
     },
     {
       id: 3,
-      name: "Amanda",
-      email: "amanda@gmail.com",
+      name: "Mike",
+      email: "mike@gmail.com",
       amount: 7000,
       paid: false,
     },

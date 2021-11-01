@@ -6,7 +6,7 @@ const Items = () => {
   const items = useSelector((state) => state.itemsReducer.items);
 
   return (
-    <div>
+    <div className="payments-list">
       {items.map((el) => (
         <PaymentItem
           id={el.id}
